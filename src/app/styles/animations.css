@@ -1,0 +1,57 @@
+/* line 62, F:/PersonalWebsite/css/animations.scss */
+.border-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 370px;
+	height: 300px;
+	align-items: center;
+	margin: 30px;
+}
+
+/* line 67, F:/PersonalWebsite/css/animations.scss */
+.border-wrap h1 {
+	text-decoration: none;
+	color: #333;
+	font-size: 120px;
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	margin: 20px;
+	flex-grow: 1;
+	cursor: default;
+	height: 100%;
+	width: 100%;
+}
+
+/* line 79, F:/PersonalWebsite/css/animations.scss */
+.border-wrap .border-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* line 3, F:/PersonalWebsite/css/animations.scss */
+.border-wrap .border-logo:before {
+	content: '';
+	position: absolute;
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+	top: calc(4px/-1);
+	left: calc(4px/-1);
+	background: linear-gradient(to right, #333 0%, #333 100%), linear-gradient(to top, #333 50%, transparent 50%), linear-gradient(to top, #333 50%, transparent 50%), linear-gradient(to right, #333 0%, #333 100%), linear-gradient(to left, #333 0%, #333 100%);
+	background-size: 100% 8px, 8px 200%, 8px 200%, 0% 8px, 0% 8px;
+	background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+	background-repeat: no-repeat, no-repeat;
+	transition: transform 0.4s ease-in-out, background-position 0.4s ease-in-out, background-size 0.4s ease-in-out;
+	transform: scaleX(0) rotate(0deg);
+	transition-delay: 0.8s, 0.4s, 0s;
+}
+
+.border-wrap .border-logo-load:before {
+	background-size: 200% 8px, 8px 400%, 8px 400%, 55% 8px, 55% 8px;
+	background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+	transform: scaleX(1) rotate(0deg);
+	transition-delay: 0s, 0.4s, 0.8s;
+}

@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -20,11 +20,11 @@ const config: Config = {
     themes: [
       {
         mytheme: {
-          "primary": "#000aff",        
-          "secondary": "#00c39e",
-          "accent": "#00ebb3",
+          "primary": "#333333",
+          "secondary": "#2d86b5",
+          "accent": "#24eaf1",
           "neutral": "#070707",
-          "base-100": "#332c2a",
+          "base-100": "#f1f1f1",
           "info": "#008bff",
           "success": "#00f1c9",
           "warning": "#c78f00",
@@ -33,5 +33,5 @@ const config: Config = {
       }
     ]
   }
-}
-export default config
+};
+export default config;

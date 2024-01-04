@@ -1,19 +1,20 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from './Navbar/Navbar'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './styles/globals.css';
+import './styles/animations.css';
+import Navbar from '../components/Navbar/Navbar';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Jeff Mulkin - Software Engineer',
   description: "Hey there, I'm a Front End Sofware Engineer. Welcome to my website.",
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -22,5 +23,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }

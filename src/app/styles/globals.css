@@ -26,6 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-.hero_image {
-  opacity: 1;
+body {
+  scroll-behavior: smooth;
 }
