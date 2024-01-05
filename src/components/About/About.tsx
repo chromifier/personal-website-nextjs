@@ -1,40 +1,57 @@
 "use client";
 
 /* eslint-disable react/no-unescaped-entities */
-import { motion, useScroll } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+import 'animate.css';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import headshot from '@/assets/headshot.jpg';
 
 function About() {
-    const { scrollYProgress } = useScroll();
+    const aboutRef = useRef(null);
+    const aboutInView = useInView(aboutRef, { margin: "0px 0px -300px 0px" });
+
+    useEffect(() => {
+        const aboutContent = document.getElementById("about-content");
+        const aboutImage = document.getElementById("about-image");
+
+        if (aboutInView) {
+            aboutContent?.classList.add("animate__fadeInLeft");
+            aboutContent?.classList.remove("animate__fadeOutLeft");
+            aboutImage?.classList.add("animate__fadeInRight");
+            aboutImage?.classList.remove("animate__fadeOutRight");
+        } else {
+            aboutContent?.classList.add("animate__fadeOutLeft");
+            aboutContent?.classList.remove("animate__fadeInLeft");
+            aboutImage?.classList.add("animate__fadeOutRight");
+            aboutImage?.classList.remove("animate__fadeInRight");
+        }
+    }, [aboutInView]);
 
     return (
         <motion.div
-            className="max-w-full bg-primary about p-6 antialiased text-base-200 flex flex-row"
-            viewport={{ once: true }}
-            style={{ opacity: scrollYProgress }}
+            className="max-w-full bg-primary about pt-6 pb-28 antialiased text-base-200 flex flex-col lg:flex-row justify-between overflow-hidden relative"
         >
-            <div className='max-w-lg m-auto'>
-                <h1 className="text-7xl mb-5">About <span className='text-secondary'>Me</span></h1>
-                <p>
-                    Passionate Front-End Engineer with a flair for innovative web development solutions. Leveraging a background in streamlining executive recruitment processes and successfully migrating projects to the LAMP stack, I bring a unique blend of technical proficiency and problem-solving acumen. Currently refining skills at Formation Dev, I thrive on creating impactful web solutions, evident in projects like Ember + Clay. Let's connect and explore opportunities to collaborate on cutting-edge web development ventures.
+            <div ref={aboutRef} id="about-content" className='m-auto max-w-lg p-3 order-last lg:order-first animate__animated'>
+                <h1 className="text-7xl mb-5 text-center lg:text-left">About <span className='text-secondary'>Me</span></h1>
+                <p className='leading-7'>
+                    Passionate Front End Engineer with a flair for innovative web development solutions. Leveraging a unique background of being a self-taught engineer, I bring a unique blend of technical proficiency and problem-solving intuition. I am a fellow in a competitive Software Engineering fellowship called Formation, where I’ve gone through intensive training to master computer science fundamentals through coding exercises through independent study, pair programming, and small mentor-led groups. I’m aspiring to be part of a dynamically skilled team of software engineers, I am eager to join a group where diverse educational backgrounds converge.
                 </p>
-                {/* <p className='mb-5'>I'm a self-taught Web Developer that was brought into the field through multiple veterans who provided years of mentorship. Detail-oriented, experienced, front-end web developer containing:</p>
-                <ul className='list-disc'>
-                    <li>4+ years of hands-on frontend experience, efficiently developing and deploying websites and applications using modern HTML, CSS, Bootstrap, JavaScript, and jQuery.</li>
-                    <li>2+ years of hands-on backend experience working with the LAMP stack (Linux, Apache, MySQL, PHP) and creating custom WordPress themes.</li>
-                    <li>1 year of hands-on experience developing in React</li>
-                </ul> */}
             </div>
-
             <Image
                 src={headshot}
                 alt="Me"
                 width={400}
-                className='rounded-badge m-auto '
+                id="about-image"
+                className='rounded-badge m-auto order-first lg:order-last mb-4 animate__animated'
             />
+            <div className="custom-shape-divider-bottom-1704492215">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
+                </svg>
+            </div>
         </motion.div>
+
     );
 }
 
