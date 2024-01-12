@@ -30,7 +30,13 @@ body {
   scroll-behavior: smooth;
 }
 
-.custom-shape-divider-bottom-1704492215 {
+/* Hero */
+.hero .arrowDown {
+  height: 100%;
+  width: 50px;
+}
+/* Hero Divider */
+.custom-shape-divider-bottom-1704498595 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -39,13 +45,58 @@ body {
   line-height: 0;
 }
 
-.custom-shape-divider-bottom-1704492215 svg {
+.custom-shape-divider-bottom-1704498595 .hero-divider {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 84px;
+  height: 145px;
 }
 
-.custom-shape-divider-bottom-1704492215 .shape-fill {
+.custom-shape-divider-bottom-1704498595 .shape-fill {
+  fill: #333333;
+}
+
+/* Resume Divider */
+.custom-shape-divider-bottom-1704498453 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704498453 svg {
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 98px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1704498453 .shape-fill {
+  fill: #2C86B5;
+}
+
+/* Portfolio Divider - Top */
+.custom-shape-divider-top-1704929955 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1704929955 svg {
+  position: relative;
+  display: block;
+  width: calc(162% + 1.3px);
+  height: 124px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1704929955 .shape-fill {
   fill: #2C86B5;
 }
