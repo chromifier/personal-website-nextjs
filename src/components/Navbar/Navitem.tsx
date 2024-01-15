@@ -1,23 +1,24 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Navitemprops = {
-    href: string,
+    id: string,
     name: string;
+    href: string,
 };
 
-export default function Navitem({ href, name }: Navitemprops) {
+export default function Navitem({ name, id, href }: Navitemprops) {
     return (
         <li>
             <motion.div
                 whileHover={{ x: 4 }}
             >
-                <a onClick={() => {
+                <Link href={href} onClick={() => {
                     const el = document.getElementById(name.toLowerCase());
                     el?.scrollIntoView({ behavior: "smooth" });
-                    console.log("click", name);
                 }}>
                     {name}
-                </a>
+                </Link>
             </motion.div>
         </li>
     );

@@ -39,8 +39,8 @@ function Resume() {
                 </div>
             </div >
             <div className='max-w-lg m-auto animate__animated flex flex-col lg:flex-row'>
-                <Link href="resume.pdf" target='_blank' className='btn btn-primary m-auto max-w-[200px] flex items-center lg:mb-4'>View My Resume</Link>
-                <Link href="/experiences" target='_blank' className='btn btn-primary m-auto max-w-[200px] flex items-center lg:mb-4'>View My Timeline</Link>
+                <Link href="resume.pdf" target='_blank' className='btn btn-primary m-auto max-w-[200px] flex items-center mb-4'>View My Resume</Link>
+                <Link href="/experiences" className='btn btn-primary m-auto max-w-[200px] flex items-center mb-4'>View My Timeline</Link>
             </div>
         </motion.div >
     );

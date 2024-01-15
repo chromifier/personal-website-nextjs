@@ -8,11 +8,11 @@ import Navitem from "./Navitem";
 
 export default function Navbar() {
     const navigation = [
-        ["Home", "#home"],
-        ["About", "#about"],
-        ["Resume", "#resume"],
-        ["Portfolio", "#portfolio"],
-        ["Contact", "#contact"]
+        ["Home", "#home", "/#home"],
+        ["About", "#about", "/#about"],
+        ["Resume", "#resume", "/#resume"],
+        ["Portfolio", "#portfolio", "/#portfolio"],
+        ["Contact", "#contact", "/#contact"]
     ];
 
     return (
@@ -30,7 +30,7 @@ export default function Navbar() {
                     <ul tabIndex={0} className="menu menu-md dropdown-content bg-secondary text-white p-4 rounded-md drop-shadow-md">
                         {
                             navigation.map((item, i) => (
-                                <Navitem key={i} href={item[1]} name={item[0]} />
+                                <Navitem key={i} name={item[0]} id={item[1]} href={item[2]} />
                             ))
                         }
                     </ul>

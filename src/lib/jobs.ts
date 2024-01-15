@@ -42,5 +42,37 @@ export const softwareJobs = [
 ];
 
 export const otherJobs = [
-
+    [
+        "Dual-Rate Lead Slot Ambassador",
+        "Thunder Valley Casino Resort",
+        "May 2021 - Present",
+        "https://thundervalleyresort.com/home",
+        [
+            "Oversaw and monitored thousands of slot machines, and ensured proper function.",
+            "Supervised up to 10 team members at a time and ensured daily assigned tasks were completed.",
+            "Ensured compliance with Title 31 requirements by aggregating the Multiple Transactions Log (MTL) to align with Federal Policy."
+        ]
+    ],
+    [
+        "EMT / Security Officer",
+        "Thunder Valley Casino Resort",
+        "October 2020 - May 2021",
+        "https://thundervalleyresort.com/home",
+        [
+            "Utilized appropriate EMT skills, including monitoring vital signs, providing first aid, basic medical care, and applying dressings and bandages.",
+            "Thoroughly investigated and documented all incidents as required, using iTrack Incident Reporting.",
+            "Defused tense situations and calmly dealt with concerned and irate guests."
+        ]
+    ],
+    [
+        "Back-of-House Team Member",
+        "Chick-Fil-A",
+        "April 2020 - October 2020",
+        "#",
+        [
+            "Applied proper food safety principles when cooking and preparing meals.",
+            "Assigned daily positions and break times for back-of-house team members.",
+            "Communicated with Team Leads and other team members in a quick and effective manner."
+        ]
+    ]
 ];

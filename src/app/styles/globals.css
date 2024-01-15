@@ -100,3 +100,8 @@ body {
 .custom-shape-divider-top-1704929955 .shape-fill {
   fill: #2C86B5;
 }
+
+/* Projects */
+.projectSmImage {
+  max-height: 100%;
+}

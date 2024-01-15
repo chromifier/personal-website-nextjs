@@ -25,7 +25,7 @@ function About() {
 
     return (
         <motion.div
-            className="max-w-full bg-primary about pt-6 pb-28 antialiased text-base-200 flex flex-col lg:flex-row justify-between overflow-hidden relative"
+            className="max-w-full bg-primary about pt-6 pb-28 antialiased text-primary-content flex flex-col lg:flex-row justify-between overflow-hidden relative"
             id="about"
         >
             <div ref={aboutRef} id="about-content" className='m-auto max-w-lg p-3 order-last lg:order-first animate__animated opacity-0'>

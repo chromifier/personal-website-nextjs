@@ -2,11 +2,15 @@
 
 import { motion } from 'framer-motion';
 import React from 'react';
+import emberImage from '@/assets/ember-and-clay-project.png';
+import eagSearchExample from '@/assets/eag-search-example.png';
+import Image from 'next/image';
+import PortfolioCard from './PortfolioCard';
 
 function Portfolio() {
     return (
         <motion.div
-            className="max-w-full bg-primary about pt-32 pb-10 antialiased text-base-200 flex flex-col lg:flex-row justify-between overflow-hidden relative"
+            className="max-w-full bg-primary pt-32 pb-10 pl-10 pr-10 antialiased text-primary-content overflow-hidden relative"
             id="portfolio"
         >
             <div className="custom-shape-divider-top-1704929955">
@@ -16,9 +20,27 @@ function Portfolio() {
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="shape-fill"></path>
                 </svg>
             </div>
-            <div className='m-auto max-w-lg p-3 animate__animated'>
+            <div className='m-auto max-w-lg p-3 animate__animated block'>
                 <h1 className="text-7xl mb-5 text-center">My <span className='text-secondary'>Portfolio</span></h1>
-
+            </div>
+            <div className='flex flex-col lg:flex-row gap-10 justify-center'>
+                <div className='card overflow-hidden max-h-[600px]'>
+                    <a href="https://emberandclayshop.com/"
+                        className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'
+                    >
+                        <Image
+                            src={emberImage}
+                            width={600}
+                            alt="Ember + Clay Project Image"
+                        />
+                    </a>
+                </div>
+                <div className='grid grid-flow-col grid-cols-2 grid-rows-2 gap-4'>
+                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
+                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
+                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
+                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
+                </div>
             </div>
         </motion.div>
     );
