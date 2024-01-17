@@ -30,7 +30,7 @@ function Resume() {
 
             <div id="resume-content" ref={resumeRef} className='animate__animated opacity-0 mb-4'>
                 <h1 className="text-5xl xl:mr-20 mb-5 text-center xl:text-right order-last">My <span className='text-primary'>Experience</span></h1>
-                <div className='flex flex-col xl:flex-row xl:items-stretch items-center text-primary gap-6'>
+                <div className='flex flex-col xl:flex-row xl:items-stretch justify-center items-center text-primary gap-6'>
                     {
                         recentThreeJobs.map((job, i) => (
                             <ResumeCard key={i} job={job[0]} company={job[1]} dates={job[2]} companyURL={job[3]} content={job[4]} />

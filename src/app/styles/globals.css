@@ -47,7 +47,7 @@ body {
 
 .custom-shape-divider-bottom-1704498595 .hero-divider {
   position: relative;
-  display: block;
+  /* display: block; */
   width: calc(100% + 1.3px);
   height: 145px;
 }
@@ -69,7 +69,7 @@ body {
 
 .custom-shape-divider-bottom-1704498453 svg {
   position: relative;
-  display: block;
+  /* display: block; */
   width: calc(145% + 1.3px);
   height: 98px;
   transform: rotateY(180deg);
@@ -91,7 +91,7 @@ body {
 
 .custom-shape-divider-top-1704929955 svg {
   position: relative;
-  display: block;
+  /* display: block; */
   width: calc(162% + 1.3px);
   height: 124px;
   transform: rotateY(180deg);
@@ -104,4 +104,25 @@ body {
 /* Projects */
 .projectSmImage {
   max-height: 100%;
+}
+
+.custom-shape-divider-top-1705523216 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1705523216 svg {
+  position: relative;
+  display: block;
+  width: calc(187% + 1.3px);
+  height: 141px;
+}
+
+.custom-shape-divider-top-1705523216 .shape-fill {
+  fill: #333333;
 }

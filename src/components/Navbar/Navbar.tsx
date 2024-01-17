@@ -16,7 +16,7 @@ export default function Navbar() {
     ];
 
     return (
-        <div className="navbar h-20 bg-base-100 text-base-100 drop-shadow-md sticky top-0 z-50 ">
+        <div className="navbar h-20 bg-base-100 text-base-100 shadow-[rgba(0,0,15,0.5)_0px_0px_8px_-2px] sticky top-0 z-50 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <motion.div

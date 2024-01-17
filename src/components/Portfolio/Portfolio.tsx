@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import emberImage from '@/assets/ember-and-clay-project.png';
 import eagSearchExample from '@/assets/eag-search-example.png';
+import personalWebsite from '@/assets/personal-website-project.png';
 import Image from 'next/image';
 import PortfolioCard from './PortfolioCard';
 
@@ -23,23 +24,21 @@ function Portfolio() {
             <div className='m-auto max-w-lg p-3 animate__animated block'>
                 <h1 className="text-7xl mb-5 text-center">My <span className='text-secondary'>Portfolio</span></h1>
             </div>
-            <div className='flex flex-col lg:flex-row gap-10 justify-center'>
+            <div className='flex flex-col lg:flex-row gap-10 lg:justify-center items-center'>
                 <div className='card overflow-hidden max-h-[600px]'>
-                    <a href="https://emberandclayshop.com/"
+                    <a href="#"
                         className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'
                     >
                         <Image
-                            src={emberImage}
+                            src={personalWebsite}
                             width={600}
-                            alt="Ember + Clay Project Image"
+                            alt="My Personal Website"
                         />
                     </a>
                 </div>
-                <div className='grid grid-flow-col grid-cols-2 grid-rows-2 gap-4'>
-                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
-                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
-                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
-                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
+                <div className='md:grid md:grid-flow-col-reverse md:grid-cols-2 md:grid-rows-2 gap-4 flex flex-col items-center'>
+                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='https://executive-advantage.com/Exabeam_Prod_Mgr/' />
+                    <PortfolioCard staticImage={emberImage} imageName='Ember + Clay Project Image' projectURL='https://emberandclayshop.com/' />
                 </div>
             </div>
         </motion.div>

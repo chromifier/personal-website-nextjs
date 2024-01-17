@@ -53,11 +53,11 @@ function Hero() {
                             el?.scrollIntoView({ behavior: "smooth" });
                         }}
                     >
-                        <svg className="w-6 h-6 text-primary arrowDown" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-6 h-6 text-primary arrowDown sm:block hidden" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
                     </motion.a>
-                    <svg className='hero-divider' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <svg className='hero-divider sm:block hidden' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" className="shape-fill"></path>
                     </svg>
                 </div>

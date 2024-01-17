@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "animate.css": "^4.1.1",
     "daisyui": "^4.4.24",
+    "emailjs": "^4.0.3",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "react": "^18",
