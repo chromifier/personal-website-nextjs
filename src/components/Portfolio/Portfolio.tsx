@@ -11,7 +11,7 @@ import PortfolioCard from './PortfolioCard';
 function Portfolio() {
     return (
         <motion.div
-            className="max-w-full bg-primary pt-32 pb-10 pl-10 pr-10 antialiased text-primary-content overflow-hidden relative"
+            className="max-w-full bg-primary pt-32 pb-10 pl-3 pr-3 antialiased text-primary-content overflow-hidden relative"
             id="portfolio"
         >
             <div className="custom-shape-divider-top-1704929955">

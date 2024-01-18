@@ -36,20 +36,19 @@ export default function Navbar() {
                     </ul>
                 </div>
             </div>
-            <div className="navbar-center">
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 350, damping: 10 }}
-                >
-                    <Link href="#">
-                        <Image
-                            src={logoImg}
-                            alt="<JM Dev />"
-                            width={140}
-                        />
-                    </Link>
-                </motion.div>
-            </div>
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 350, damping: 10 }}
+                className="navbar-center"
+            >
+                <Link href="#">
+                    <Image
+                        src={logoImg}
+                        alt="<JM Dev />"
+                        width={140}
+                    />
+                </Link>
+            </motion.div>
         </div>
     );
 };

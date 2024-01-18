@@ -39,7 +39,7 @@ function About() {
                 alt="Me"
                 width={400}
                 id="about-image"
-                className='rounded-badge m-auto order-first lg:order-last mb-4 animate__animated opacity-0'
+                className='rounded-badge m-auto order-first lg:order-last mb-4 animate__animated opacity-0 p-3'
             />
             <div className="custom-shape-divider-bottom-1704498453">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

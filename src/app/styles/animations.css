@@ -3,10 +3,11 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 370px;
+	width: 100%;
+	max-width: 370px;
 	height: 300px;
 	align-items: center;
-	margin: 30px;
+	margin-bottom: 30px;
 }
 
 /* line 67, F:/PersonalWebsite/css/animations.scss */

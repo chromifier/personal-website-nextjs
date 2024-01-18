@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded shadow-[rgba(0,0,15,0.5)_0px_-1px_8px_-2px]">
-            <nav className="grid grid-flow-col gap-4">
+            <nav className="flex flex-row flex-wrap gap-4 justify-center">
                 <a href="#about" className="btn btn-ghost">About</a>
                 <a href="#resume" className="btn btn-ghost">Resume</a>
                 <a href="#portfolio" className="btn btn-ghost">Portfolio</a>

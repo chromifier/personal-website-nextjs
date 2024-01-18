@@ -2,30 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
 body {
   scroll-behavior: smooth;
 }
@@ -38,7 +14,7 @@ body {
 /* Hero Divider */
 .custom-shape-divider-bottom-1704498595 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -59,7 +35,7 @@ body {
 /* Resume Divider */
 .custom-shape-divider-bottom-1704498453 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -82,7 +58,7 @@ body {
 /* Portfolio Divider - Top */
 .custom-shape-divider-top-1704929955 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -108,7 +84,7 @@ body {
 
 .custom-shape-divider-top-1705523216 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
