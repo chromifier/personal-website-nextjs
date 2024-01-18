@@ -1,13 +1,14 @@
+import Link from 'next/link';
 import React from 'react';
 
 function Footer() {
     return (
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded shadow-[rgba(0,0,15,0.5)_0px_-1px_8px_-2px]">
             <nav className="flex flex-row flex-wrap gap-4 justify-center">
-                <a href="#about" className="btn btn-ghost">About</a>
-                <a href="#resume" className="btn btn-ghost">Resume</a>
-                <a href="#portfolio" className="btn btn-ghost">Portfolio</a>
-                <a href="#contact" className="btn btn-ghost">Contact</a>
+                <Link href="#about" className="btn btn-ghost">About</Link>
+                <Link href="#resume" className="btn btn-ghost">Resume</Link>
+                <Link href="#portfolio" className="btn btn-ghost">Portfolio</Link>
+                <Link href="#contact" className="btn btn-ghost">Contact</Link>
             </nav>
             <nav>
                 <div className="grid grid-flow-col gap-4">
