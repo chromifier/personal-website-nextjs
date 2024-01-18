@@ -1,6 +1,7 @@
 "use client";
 
 import React, { FormEvent, useRef, useState } from 'react';
+import { env } from "@/lib/db/env.ts";
 import emailjs from '@emailjs/browser';
 import { useFormStatus } from 'react-dom';
 
@@ -14,7 +15,7 @@ function Contact() {
         e.preventDefault();
         setSendingStatus(true);
 
-        emailjs.sendForm('service_gu3ae3w', 'template_qay4r3q', form.current, 'xwU1XkLdTeRSwl3Br')
+        emailjs.sendForm(env.EMAILJS_SERVICE_ID, env.EMAILJS_TEMPLATE_ID, form.current, env.EMAILJS_PUBLIC_KEY)
             .then((result) => {
                 console.log(result.text);
                 setMessageSent(true);
