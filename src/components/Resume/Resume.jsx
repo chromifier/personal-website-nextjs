@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import ResumeCard from './ResumeCard';
-import { softwareJobs } from '@/src/lib/jobs.ts';
+import { softwareJobs } from '@/src/lib/jobs.js';
 
 function Resume() {
     const resumeRef = useRef(null);

@@ -10,7 +10,7 @@ function Contact() {
     const [sendingStatus, setSendingStatus] = useState(false);
     const { pending } = useFormStatus();
 
-    const sendEmail = (e: { preventDefault: () => void; }) => {
+    const sendEmail = (e) => {
         e.preventDefault();
         setSendingStatus(true);
 

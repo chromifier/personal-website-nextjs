@@ -1,5 +1,5 @@
 import React from 'react';
-import { softwareJobs, otherJobs } from '@/src/lib/jobs.ts';
+import { softwareJobs, otherJobs } from '@/src/lib/jobs.js';
 import ExperienceCard from './ExperienceCard';
 import Link from 'next/link';
 
