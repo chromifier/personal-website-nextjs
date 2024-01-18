@@ -9,7 +9,7 @@ import headshot from '@/assets/headshot.jpg';
 
 function About() {
     const aboutRef = useRef(null);
-    const aboutInView = useInView(aboutRef, { margin: "0px 0px -300px 0px" });
+    const aboutInView = useInView(aboutRef, { margin: "0px 0px -250px 0px" });
 
     useEffect(() => {
         const aboutContent = document.getElementById("about-content");

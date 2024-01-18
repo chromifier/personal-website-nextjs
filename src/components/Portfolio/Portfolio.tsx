@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion, useInView } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
 import emberImage from '@/assets/ember-and-clay-project.png';
 import eagSearchExample from '@/assets/eag-search-example.png';
 import personalWebsite from '@/assets/personal-website-project.png';
@@ -9,10 +9,23 @@ import Image from 'next/image';
 import PortfolioCard from './PortfolioCard';
 
 function Portfolio() {
+    const portfolioRef = useRef(null);
+    const portfolioInView = useInView(portfolioRef, { margin: "0px 0px -200px 0px" });
+
+    useEffect(() => {
+        const portfolioTitle = document.getElementById("portfolio__title");
+        const portfolioContent = document.getElementById("portfolio__content");
+
+        if (portfolioInView) {
+            portfolioTitle?.classList.add("animate__fadeInUp");
+            portfolioContent?.classList.add("animate__fadeInUp");
+        }
+    }, [portfolioInView]);
     return (
         <motion.div
             className="max-w-full bg-primary pt-32 pb-10 pl-3 pr-3 antialiased text-primary-content overflow-hidden relative"
             id="portfolio"
+            layout
         >
             <div className="custom-shape-divider-top-1704929955">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -21,10 +34,10 @@ function Portfolio() {
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="shape-fill"></path>
                 </svg>
             </div>
-            <div className='m-auto max-w-lg p-3 animate__animated block'>
+            <div ref={portfolioRef} id="portfolio__title" className='m-auto max-w-lg p-3 animate__animated opacity-0 block'>
                 <h1 className="text-7xl mb-5 text-center">My <span className='text-secondary'>Portfolio</span></h1>
             </div>
-            <div className='flex flex-col lg:flex-row gap-10 lg:justify-center items-center'>
+            <div id="portfolio__content" className='flex flex-col lg:flex-row gap-10 lg:justify-center items-center animate__animated opacity-0'>
                 <div className='card overflow-hidden max-h-[600px]'>
                     <a href="#"
                         className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'

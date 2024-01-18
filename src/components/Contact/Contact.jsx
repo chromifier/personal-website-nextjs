@@ -1,14 +1,12 @@
 "use client";
 
-import React, { FormEvent, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { useFormStatus } from 'react-dom';
 
 function Contact() {
     const form = useRef(null);
     const [messageSent, setMessageSent] = useState(false);
     const [sendingStatus, setSendingStatus] = useState(false);
-    const { pending } = useFormStatus();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -33,7 +31,6 @@ function Contact() {
                 </svg>
             </div>
             <div id="contact" className='bg-base-100 text-base-content p-3 pt-16'>
-
                 <h1 className='text-center text-5xl mt-20'>Contact Me</h1>
                 <form ref={form} onSubmit={sendEmail} className='flex flex-col max-w-lg m-auto mt-4'>
                     <div className='mb-3'>
@@ -65,7 +62,6 @@ function Contact() {
                             Send Message
                             {sendingStatus && <span className="loading loading-spinner" />}
                         </button>
-
                     </div>
                 </form>
                 {
