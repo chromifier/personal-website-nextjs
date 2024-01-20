@@ -17,9 +17,7 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "sharp": "^0.33.2",
-    "vercel": "^33.2.0",
-    "zod": "^3.21.4"
+    "vercel": "^33.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
