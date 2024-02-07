@@ -5,8 +5,8 @@ export const softwareJobs = [
         "January 2023 - Present",
         "https://formation.dev/",
         [
-            "Selected for highly-competitive Fellowship for personalized coaching from top-tier software engineers.",
-            "Completed intensive training to master computer science fundamentals through coding exercises through independent study, pair programming, and small mentor-led groups."
+            "Selected for a highly competitive fellowship, receiving personalized coaching from top-tier software engineers to enhance software development expertise.",
+            "Advanced computer science proficiency through intensive training, including coding exercises in JavaScript, independent study, pair programming, and mentor-led small group sessions."
         ]
     ],
     [
@@ -15,8 +15,8 @@ export const softwareJobs = [
         "April 2022 - Present",
         "https://executive-advantage.com/",
         [
-            "Designed and developed an automated Python workflow to sift through 100,000+ CSV rows gathered from Lead Generating websites per day; The automation allowed for 100% more sent cold recruitment emails per day, generating 70% more leads compared to the 30% previously",
-            "Designed custom email templates using HTML and CSS and integrated them into a cold-emailing service for obtaining potential candidates."
+            "Collaborated with the principal consultant to streamline executive recruitment website creation using JavaScript and CSS/SASS, reducing search turnaround times by 75%.",
+            "Developed an automated Python workflow to process over 100,000 CSV rows daily from lead-generating websites, increasing leads by 70% and doubling daily recruitment email output."
         ]
     ],
     [
@@ -25,8 +25,8 @@ export const softwareJobs = [
         "January 2019 - May 2020",
         "https://calproresearch.com/",
         [
-            "Architected a migration of an existing ASP .NET project to the LAMP stack (Linux, Apache, MySQL, PHP) to improve runtime performance for clients, support future customizable modules and improve code readability.",
-            "Re-designed the survey generator using PHP, JavaScript, and MySQL and reduced system runtimes by 50% from 8 seconds to 4 seconds."
+            "Led the migration of an ASP .NET project to the LAMP stack, enhancing runtime performance for clients, enabling support for future customizable modules, and enhancing code readability.",
+            "Halved the runtime of the survey generator from 8 to 4 seconds by optimizing the codebase in PHP, JavaScript, and MySQL."
         ]
     ],
     [
@@ -35,8 +35,8 @@ export const softwareJobs = [
         "December 2014 - July 2017",
         "#",
         [
-            "Designed and developed various websites and WordPress themes for 10+ clients using the LAMP (Linux, Apache, MySQL, PHP) stack.",
-            "Integrated the Google Maps API to several eCommerce websites to show product locations."
+            "Developed websites and custom WordPress themes for over 10 clients using the LAMP stack (Linux, Apache, MySQL, PHP).",
+            "Collaborated with the design team to implement high-quality web designs utilizing Bootstrap, JavaScript, and jQuery."
         ]
     ],
 ];
