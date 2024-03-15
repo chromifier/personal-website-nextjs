@@ -26,8 +26,10 @@ export default function RootLayout({
         <ConsentPopup />
         {children}
         <Footer />
-        if (localStorage.getItem('userConsent') === 'granted') {
+        {localStorage.getItem('userConsent') === 'granted' ?
           <Analytics />
+          :
+          null
         } 
       </body>
     </html>
