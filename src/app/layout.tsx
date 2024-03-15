@@ -5,6 +5,7 @@ import './styles/animations.css';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import { Analytics } from "@vercel/analytics/react"
+import ConsentPopup from '../components/ConsentPopup/ConsentPopup';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,9 +23,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <ConsentPopup />
         {children}
         <Footer />
-        <Analytics />
+        if (localStorage.getItem('userConsent') === 'granted') {
+          <Analytics />
+        } 
       </body>
     </html>
   );
