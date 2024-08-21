@@ -13,7 +13,7 @@ type PortfolioCardProps = {
 function PortfolioCard({ staticImage, imageName, projectURL }: PortfolioCardProps) {
     return (
         <div className='card overflow-hidden max-h-[250px]'>
-            <a href={projectURL} className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'>
+            <a href={projectURL} target='_blank' className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'>
                 <Image
                     src={staticImage}
                     width={250}

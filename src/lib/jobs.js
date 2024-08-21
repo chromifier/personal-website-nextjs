@@ -1,21 +1,13 @@
 export const softwareJobs = [
-    [
-        "Front End Engineering Fellow",
-        "Formation",
-        "January 2023 - Present",
-        "https://formation.dev/",
-        [
-            "Selected for a highly competitive fellowship, receiving personalized coaching from top-tier software engineers to enhance software development expertise.",
-            "Advanced computer science proficiency through intensive training, including coding exercises in JavaScript, independent study, pair programming, and mentor-led small group sessions."
-        ]
-    ],
+    
     [
         "Web Developer",
         "Executive Advantage, Inc.",
         "April 2022 - Present",
         "https://executive-advantage.com/",
         [
-            "Collaborated with the principal consultant to streamline executive recruitment website creation using JavaScript and CSS/SASS, reducing search turnaround times by 75%.",
+            "Designed and developed a new company website using React, JavaScript, and Tailwind CSS, enhancing user experience and modernizing the company's online presence.",
+            "Streamlined executive recruitment website creation with JavaScript and CSS/SASS, reducing search turnaround times by 75%.",
             "Developed an automated Python workflow to process over 100,000 CSV rows daily from lead-generating websites, increasing leads by 70% and doubling daily recruitment email output."
         ]
     ],
@@ -26,6 +18,7 @@ export const softwareJobs = [
         "https://calproresearch.com/",
         [
             "Led the migration of an ASP .NET project to the LAMP stack, enhancing runtime performance for clients, enabling support for future customizable modules, and enhancing code readability.",
+            "Designed and implemented reusable UI components with HTML, CSS, and JavaScript, streamlining the development process and enhancing user interface consistency.",
             "Halved the runtime of the survey generator from 8 to 4 seconds by optimizing the codebase in PHP, JavaScript, and MySQL."
         ]
     ],
@@ -36,9 +29,31 @@ export const softwareJobs = [
         "#",
         [
             "Developed websites and custom WordPress themes for over 10 clients using the LAMP stack (Linux, Apache, MySQL, PHP).",
-            "Collaborated with the design team to implement high-quality web designs utilizing Bootstrap, JavaScript, and jQuery."
+            "Integrated the Google Maps API with JavaScript in eCommerce websites to showcase product locations.",
+            "Implemented high-quality web designs utilizing Bootstrap, JavaScript, and jQuery."
         ]
     ],
+];
+
+export const education = [
+    [
+        "Front End Engineering Fellow",
+        "Formation",
+        "https://formation.dev/",
+        [
+            "Selected for a highly competitive fellowship, receiving personalized coaching from top-tier software engineers to enhance software development expertise.",
+            "Advanced computer science proficiency through intensive training, including coding exercises in JavaScript, independent study, pair programming, and mentor-led small group sessions."
+        ]
+    ],
+    [
+        "Professional Certificates",
+        "freeCodeCamp",
+        "freecodecamp.org",
+        [
+            "Responsive Web Design Professional Certificate",
+            "JavaScript Algorithms and Data Structures Professional Certificate"
+        ]
+    ]
 ];
 
 export const otherJobs = [

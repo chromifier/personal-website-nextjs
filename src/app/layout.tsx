@@ -4,8 +4,8 @@ import './styles/globals.css';
 import './styles/animations.css';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
-import { Analytics } from "@vercel/analytics/react"
-import ConsentPopup from '../components/ConsentPopup/ConsentPopup';
+// import { Analytics } from "@vercel/analytics/react"
+// import ConsentPopup from '../components/ConsentPopup/ConsentPopup';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,14 +23,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <ConsentPopup />
+        {/* <ConsentPopup /> */}
         {children}
         <Footer />
-        {localStorage.getItem('userConsent') === 'granted' ?
+        {/* {localStorage.getItem('userConsent') === 'granted' ?
           <Analytics />
           :
           null
-        } 
+        }  */}
       </body>
     </html>
   );

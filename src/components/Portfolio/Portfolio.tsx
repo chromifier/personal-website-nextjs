@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from 'react';
 import emberImage from '@/assets/ember-and-clay-project.png';
 import eagSearchExample from '@/assets/eag-search-example.png';
 import personalWebsite from '@/assets/personal-website-project.png';
+import eagWebsite from '@/assets/eag_website.png';
 import Image from 'next/image';
 import PortfolioCard from './PortfolioCard';
 
@@ -39,18 +40,20 @@ function Portfolio() {
             </div>
             <div id="portfolio__content" className='flex flex-col lg:flex-row gap-10 lg:justify-center items-center animate__animated opacity-0'>
                 <div className='card overflow-hidden max-h-[600px]'>
-                    <a href="#"
+                    <a href="https://executive-advantage.com/"
                         className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'
+                        target='_blank'
                     >
                         <Image
-                            src={personalWebsite}
+                            src={eagWebsite}
                             width={600}
-                            alt="My Personal Website"
+                            alt="EAG Website"
                         />
                     </a>
                 </div>
                 <div className='md:grid md:grid-flow-col-reverse md:grid-cols-2 md:grid-rows-2 gap-4 flex flex-col items-center'>
-                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='https://executive-advantage.com/Exabeam_Prod_Mgr/' />
+                    <PortfolioCard staticImage={personalWebsite} imageName='Personal Website Image' projectURL='#' />
+                    <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
                     <PortfolioCard staticImage={emberImage} imageName='Ember + Clay Project Image' projectURL='https://emberandclayshop.com/' />
                 </div>
             </div>
