@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from 'react';
 import emberImage from '@/assets/ember-and-clay-project.png';
 import eagSearchExample from '@/assets/eag-search-example.png';
 import personalWebsite from '@/assets/personal-website-project.png';
+import asdDoodles from '@/assets/asdcompanionlabradoodlesfullpage.png';
 import eagWebsite from '@/assets/eag_website.png';
 import Image from 'next/image';
 import PortfolioCard from './PortfolioCard';
@@ -39,7 +40,7 @@ function Portfolio() {
                 <h1 className="text-7xl mb-5 text-center">My <span className='text-secondary'>Portfolio</span></h1>
             </div>
             <div id="portfolio__content" className='flex flex-col lg:flex-row gap-10 lg:justify-center items-center animate__animated opacity-0'>
-                <div className='card overflow-hidden max-h-[600px]'>
+                {/* <div className='card overflow-hidden max-h-[600px]'>
                     <a href="https://executive-advantage.com/"
                         className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'
                         target='_blank'
@@ -50,8 +51,21 @@ function Portfolio() {
                             alt="EAG Website"
                         />
                     </a>
+                </div> */}
+                <div className='card overflow-hidden max-h-[600px]'>
+                    <a href="https://asdcompanionlabradoodles.com/"
+                        className='cursor-pointer brightness-75 transition-all duration-[300ms] hover:scale-[1.03] hover:brightness-100'
+                        target='_blank'
+                    >
+                        <Image
+                            src={asdDoodles}
+                            width={600}
+                            alt="ASD Companion Labradoodles"
+                        />
+                    </a>
                 </div>
                 <div className='md:grid md:grid-flow-col-reverse md:grid-cols-2 md:grid-rows-2 gap-4 flex flex-col items-center'>
+                    <PortfolioCard staticImage={eagWebsite} imageName='EAG Website' projectURL='#' />
                     <PortfolioCard staticImage={personalWebsite} imageName='Personal Website Image' projectURL='#' />
                     <PortfolioCard staticImage={eagSearchExample} imageName='Executive Advantage Search Example' projectURL='#' />
                     <PortfolioCard staticImage={emberImage} imageName='Ember + Clay Project Image' projectURL='https://emberandclayshop.com/' />
